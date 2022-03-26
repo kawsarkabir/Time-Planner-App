@@ -1,0 +1,468 @@
+/* part of default css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Work Sans', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.left{
+   float: left;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.text-start{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: right;
+}
+ul{
+    list-style: none;
+}
+.text-gray{
+    color: #767676;
+}
+/* part of header section */
+.header-section{
+    background-color: #fff;
+    position: fixed;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:99;
+    /*! position: absolute; */
+}
+.header-section .logo{
+    width: 30%;
+    margin-top: 10px;
+}
+.header-section .logo img{
+    width: 80px;
+}
+.header-section .menu{
+    width: 60%;
+}
+.header-section .menu ul{}
+.header-section .menu ul li{
+    display: inline-block;
+}
+.header-section .menu ul li a{
+    color:#261438;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 50px;
+}
+/* part of banner section */
+.banner-section{
+    background: url("https://i.ibb.co/Yc74VnK/banner.jpg") no-repeat center;
+    background-size: cover;
+    padding: 200px 0px;
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.banner-section .banner-text{}
+.banner-text{
+    
+}
+.banner-text p{
+    color: #fff;
+}
+.banner-text h1{
+    color: #fff;
+    font-size: 55px;
+    margin: 30px 0px;
+    font-weight: 800;
+}
+.banner-text a{
+    display: inline-block;
+}
+.btn{
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .5s;
+    font-weight: 500;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+}
+.btn:hover{
+    background:#dda137;
+    color: #fff;
+}
+
+/* part of pricing-section */
+.pricing-section{
+     background: #f7f7f7;
+     padding: 100px 0px;
+}
+.pricing-text h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.pricing-text p{
+    color:#261438;
+    margin: 20px 0px;
+    font-size: 16px;
+}
+.pricing-item .item-1{
+    width: 31%;
+    float: left;
+    margin-left: 22px;
+    background: #fff;
+    margin-top: 90px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+}
+.item-1 .p-heading{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: .4s;
+}
+.p-heading h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+.p-heading h1{
+    font-size: 50px;
+    margin: 30px 0px;
+    background: #f5f5f5;
+    padding: 0px 5px;
+    transition: .4s;
+}
+.p-heading span{
+    font-size: 20px;
+}
+.p-heading h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.p-heading p{
+    font-size: 20px;
+}
+.p-content{
+    padding: 30px;
+}
+.p-content ul li{
+    margin: 15px 0px;
+    color: #767676;
+    font-size: 22px;
+}
+.p-content ul li span{
+    color: #dda137;
+    display: inline-block;
+    font-size: 30px;
+    width: 45px;
+}
+.p-button{
+    text-align: center;
+    margin-top: 50px;
+}
+.item-1:hover .p-heading{
+    background: #dda137;
+    color: #fff;
+}
+.item-1:hover .p-heading h1{
+    background: #dda137;
+    color: #fff;
+}
+.item-1:hover .btn{
+    background: #dda137;
+    color: #fff;
+}
+/* part of teem section */
+.teem-section{
+    background: #fff;
+    padding: 50px 0px;
+}
+.teem-section .t-text{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.teem-section .t-text h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.teem-member{
+     
+}
+.teem-member .members{
+    width: 21%;
+    float: left;
+    border-block: ;
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    margin-left:25px;
+    border:3px double #dda137;
+   
+}
+.members img{
+    width: 100%;
+    
+}
+.members .member-bio{
+    padding: 20px;
+}
+.member-bio h4{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.member-bio p{
+    font-size: 19px;
+    color: #767676;
+}
+/* part of newsletter section */
+.news-letter-section{
+    background: #f5f5f5;
+    padding:50px 0px;
+    text-align: center;
+}
+.news-letter-section .ns-text{}
+.ns-text p{
+    font-size:18px;
+    font-weight: 300;
+    color: #221231;
+}
+.ns-text h2{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.ns-from{
+    margin-top: 50px;
+}
+.default-input{
+    width: 250px;
+    padding: 14px 15px;
+    font-size: 16px;
+    border: 1px solid #bdc730;
+    border-radius: 10px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.1);
+    transition: .3s;
+    box-sizing: border-box;
+}
+.default-input:focus{
+    box-shadow: 3px 4px 30px 0 rgba(38, 20, 56,.5);
+    border: 1px solid transparent;
+   
+}
+.submit-btn{
+    background:#aa972c;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 11px 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    border: 1px solid transparent;
+    transition: .4s;
+    width: 190px;
+}
+button.submit-btn:hover{
+    background: #fff;
+    color: #dda137;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+    border: 1px solid #aa972c;
+}
+.ns-from input{
+    width: 400px;
+}
+.choose-us-section{
+    background: #fff;
+    padding: 30px 0px;
+}
+.choose-us-section h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.choose-us-section .cu-img{
+    width: 42%;
+    float: left;
+}
+.choose-us-section .cu-img img{
+    
+}
+.choose-us-section .cu-text{
+    width: 55%;
+    float: right;
+    margin-top: 20px;
+}
+.cu-text h4{
+    font-weight: 600;
+    font-size:20px;
+    color:#4e4f4d;
+}
+.cu-text p{
+    margin: 20px 0px;
+    font-size: 16px;
+    color: #2d2b2b;
+}
+/* part of feedback */
+.feedback-section{
+    background-color:#f5f5f5;
+    padding: 100px 0px;
+}
+.feedback-section .fs-text{
+    text-align: center;
+}
+.fs-text p {
+    font-weight: 300;
+    font-size: 20px;
+  }
+.fs-text h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.feedback-items .item-1{
+    float: left;
+    width: 30%;
+    margin-top: 80px;
+    margin-left: 22px;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.item-1 .item-pera{
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+    position: relative;
+}
+.item-1 .item-pera::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -25px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.item-1 .item-pera p{
+    line-height: 30px;
+    color: #767676;
+    font-size: 20px;
+    position: relative;
+}
+.item-1 .item-pera p::before{
+    content: "\f10d";
+    position: absolute;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    top: -3px;
+    left: -10px;
+    font-size: 60px;
+    opacity: 0.15;
+}
+.user-info{
+    margin-left: 30px;
+}
+.user-info img{
+    width: 50px;
+    float: left;
+    border: 8px solid #aa972c;
+}
+.user-info .user-bio{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.user-info .user-bio h4{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+/* part of contact us */
+.contact-section{
+    background-color: #fff;
+    padding-top:60px;
+}
+.contact-section{
+    width: 50%;
+    margin: auto;
+}
+.contact-text h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.contact-text p{
+    color: #767676;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+.contact-from .left{
+    float: left;
+}
+.contact-from .right{
+    float: right;
+}
+.contact-from .w100{
+    width: 100%;
+}
+.contact-from .w50{
+    width: 48%;
+}
+.contact-from input{
+    margin-bottom: 20px;
+}
+.contact-from button{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.contact-from textarea{
+    height: 160px;
+}
+/* part of fotter-section */
+.fotter-section{
+     text-align: center;
+     padding: 15px 0px;
+     margin-top: 50px;
+}
+.fotter-section p{
+    font-size: 20px;
+    
+}
